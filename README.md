@@ -1,73 +1,130 @@
-# React + TypeScript + Vite
+# BotLeague - Robotics Arena Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Name
 
-Currently, two official plugins are available:
+BotLeague - Robotics Arena Landing Page
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Description
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+BotLeague is a responsive robotics competition platform landing page developed using React, TypeScript, and CSS. The website showcases robotics events, competition disciplines, rankings, community participation programs, sponsors, and user engagement features through a modern futuristic UI inspired by the provided Figma design.
 
-## Expanding the ESLint configuration
+This project was developed as part of the BotMakers Pvt Ltd Frontend Assignment.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Frontend
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* React.js
+* TypeScript
+* CSS3
+* Vite
+
+### Libraries
+
+* React Icons
+
+### Deployment
+
+* Vercel
+
+---
+
+## Live Demo URL
+
+https://bot-league-rosy.vercel.app/
+
+---
+
+## Features
+
+* Responsive Navigation Bar
+* Hero Section with Live Event Banner
+* Competitions & Events Section
+* User Journey Timeline
+* About BotLeague Section
+* Categories Section
+* Competition Disciplines Showcase
+* League Advantages Section
+* Community Registration Forms
+* Sponsors Section
+* Footer with Quick Links & Social Media
+* Mobile Responsive Design
+
+---
+
+## Installation Steps
+
+### 1. Clone Repository
+
+https://github.com/swarupsalunke/BotLeague.git
+
+### 2. Navigate to Project Folder
+
+```bash
+cd frontend
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 3. Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+### 4. Run Development Server
+
+```bash
+npm run dev
+```
+
+### 5. Build for Production
+
+```bash
+npm run build
+```
+
+### 6. Preview Production Build
+
+```bash
+npm run preview
+```
+
+---
+
+## Folder Structure
+
+```text
+src
+│
+├── assets
+├── components
+│   ├── Navbar
+│   ├── Hero
+│   ├── Events
+│   ├── Journey
+│   ├── AboutLeague
+│   ├── Categories
+│   ├── Disciplines
+│   ├── Advantage
+│   ├── Ecosystem
+│   ├── Sponsors
+│   └── Footer
+│
+├── pages
+│   └── Home.tsx
+│
+├── App.tsx
+└── main.tsx
+```
+
+---
+
+## Author
+
+**Swarup Salunke**
+
+BCA Graduate (2025)
+Frontend & MERN Stack Developer
