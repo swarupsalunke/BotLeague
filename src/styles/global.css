@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  .hero-content h1,
+.events-title,
+.journey-title,
+.about-section h2,
+.categories-section h2,
+.disciplines-section h2,
+.advantage-left h2,
+.ecosystem-section h2,
+.sponsors-section h2,
+.footer h3 {
+  font-family: "Orbitron", sans-serif;
+} 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 1024px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar-links {
+    gap: 25px;
+  }
+
+  .hero-content {
+    margin-left: 40px;
+    max-width: 550px;
+  }
+
+  .hero-content h1 {
+    font-size: 55px;
+  }
+
+  .hero-content p {
+    font-size: 20px;
+  }
+
+  .events-grid,
+  .categories-grid,
+  .disciplines-grid,
+  .ecosystem-grid,
+  .sponsors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-container,
+  .advantage-section {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-line {
+    display: none;
+  }
+
+  .journey-steps {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+}
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .navbar-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-section {
+    padding: 120px 20px 60px;
+    min-height: auto;
+  }
+
+  .hero-content {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .live-badge {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .hero-bg-image {
+    opacity: 0.25;
+    width: 100%;
+  }
+
+  .events-section,
+  .about-section,
+  .categories-section,
+  .disciplines-section,
+  .advantage-section,
+  .ecosystem-section,
+  .sponsors-section {
+    padding: 70px 20px;
+  }
+
+  .events-grid,
+  .categories-grid,
+  .disciplines-grid,
+  .ecosystem-grid,
+  .sponsors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    width: 100%;
+  }
+
+  .about-container,
+  .advantage-section {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .links-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+  .hero-content h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .events-title,
+  .journey-title,
+  .about-section h2,
+  .categories-section h2,
+  .disciplines-section h2,
+  .advantage-left h2,
+  .ecosystem-section h2,
+  .sponsors-section h2 {
+    font-size: 28px;
+  }
+
+  .live-badge {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .create-btn,
+  .explore-btn,
+  .register-btn,
+  .login-btn {
+    width: 100%;
+  }
+
+  .step-circle {
+    width: 90px;
+    height: 90px;
+    font-size: 35px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,274 @@
+/* events.css */
+
+.events-page {
+  position: relative;
+  min-height: 100vh;
+  background: #0c0c0d;
+  color: #ffffff;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  padding: 56px 56px 80px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.events-page * {
+  box-sizing: border-box;
+}
+
+.events-glow {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 320px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 90, 60, 0.35) 0%,
+    rgba(120, 60, 200, 0.18) 45%,
+    rgba(12, 12, 13, 0) 75%
+  );
+  filter: blur(10px);
+  pointer-events: none;
+}
+
+.events-header {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.events-header h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Arial Black", "Helvetica Neue", sans-serif;
+}
+
+.events-columns {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.events-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.column-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.column-title.live {
+  color: #ff5a46;
+}
+
+/* --- shared card --- */
+.live-card,
+.past-card {
+  background: #161617;
+  border: 1px solid #232325;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.muted {
+  color: #8e8e93;
+  margin: 4px 0 0;
+  font-size: 14px;
+}
+
+/* --- LIVE NOW --- */
+.live-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid #2a2a2c;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.live-card-header h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.ongoing-pill {
+  background: #ff5a46;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.bracket {
+  display: grid;
+  grid-template-columns: 1fr 30px 1fr 30px 1fr;
+  align-items: center;
+}
+
+.bracket-round {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 220px;
+  gap: 12px;
+}
+
+.round-1 {
+  justify-content: space-between;
+}
+
+.round-2 {
+  justify-content: space-around;
+}
+
+.round-final {
+  justify-content: center;
+}
+
+.bracket-slot {
+  display: flex;
+}
+
+.bracket-box {
+  width: 100%;
+  height: 36px;
+  background: #3a3a3d;
+  border-radius: 6px;
+}
+
+.bracket-connectors {
+  height: 220px;
+}
+
+.bracket-connectors svg {
+  width: 100%;
+  height: 100%;
+}
+
+.bracket-connectors path {
+  fill: none;
+  stroke: #ff5a46;
+  stroke-width: 2;
+}
+
+/* --- UPCOMING --- */
+.upcoming-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.upcoming-card {
+  background: #161617;
+  border: 1px solid #232325;
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.upcoming-card h3 {
+  margin: 0 0 16px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.upcoming-meta {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 20px;
+}
+
+.meta-label {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.meta-value {
+  margin: 0;
+  font-size: 13px;
+  color: #9a9a9e;
+}
+
+.register-btn {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 13px 0;
+  background: linear-gradient(180deg, #ff6a52 0%, #ff4d36 100%);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: filter 0.15s ease, transform 0.15s ease;
+}
+
+.register-btn:hover {
+  filter: brightness(1.08);
+}
+
+.register-btn:active {
+  transform: translateY(1px);
+}
+
+.register-btn:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* --- PAST RESULTS --- */
+.past-item {
+  padding: 16px 0;
+}
+
+.past-item:first-child {
+  padding-top: 0;
+}
+
+.past-item.has-divider {
+  border-bottom: 1px solid #2a2a2c;
+}
+
+.past-item h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* --- responsive --- */
+@media (max-width: 980px) {
+  .events-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .events-page {
+    padding: 32px 20px 60px;
+  }
+
+  .events-header h1 {
+    font-size: 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .register-btn {
+    transition: none;
+  }
+}

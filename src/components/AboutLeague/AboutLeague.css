@@ -1,0 +1,45 @@
+.about-section {
+  background: #111;
+  padding: 100px 70px;
+}
+
+.about-section h2 {
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-left,
+.about-center {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.about-item span {
+  color: #ff4d4d;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.about-item h3 {
+  font-size: 38px;
+  margin: 10px 0;
+}
+
+.about-item p {
+  color: #a0a0a0;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.about-right img {
+  width: 100%;
+  object-fit: contain;
+}

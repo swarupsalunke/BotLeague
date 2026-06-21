@@ -1,0 +1,33 @@
+.sponsors-section {
+  background: #000;
+  padding: 100px 70px;
+}
+
+.sponsors-section h2 {
+  font-size: 48px;
+  margin-bottom: 70px;
+}
+
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px 40px;
+}
+
+.sponsor-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.sponsor-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.sponsor-card h3 {
+  font-size: 22px;
+  color: #9f9f9f;
+  font-weight: 600;
+}
