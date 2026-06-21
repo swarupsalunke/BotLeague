@@ -1,5 +1,5 @@
 import React from "react";
-import "./events.css";
+import "./Events.css";
 
 interface UpcomingEvent {
   title: string;
