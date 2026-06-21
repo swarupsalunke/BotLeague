@@ -74,7 +74,7 @@ const Events: React.FC = () => {
 
             <div className="bracket">
               <div className="bracket-round round-1">
-                {round1.map((team, i) => (
+                {round1.map((i) => (
                   <div className="bracket-slot" key={`r1-${i}`}>
                     <div className="bracket-box" />
                   </div>
@@ -89,7 +89,7 @@ const Events: React.FC = () => {
               </div>
 
               <div className="bracket-round round-2">
-                {round2.map((team, i) => (
+                {round2.map((i) => (
                   <div className="bracket-slot" key={`r2-${i}`}>
                     <div className="bracket-box" />
                   </div>
@@ -103,7 +103,7 @@ const Events: React.FC = () => {
               </div>
 
               <div className="bracket-round round-final">
-                {final.map((team, i) => (
+                {final.map((i) => (
                   <div className="bracket-slot" key={`final-${i}`}>
                     <div className="bracket-box" />
                   </div>
